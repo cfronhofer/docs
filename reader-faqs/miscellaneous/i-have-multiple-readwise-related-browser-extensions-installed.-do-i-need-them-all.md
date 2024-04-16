@@ -1,0 +1,3 @@
+# I have multiple Readwise-related browser extensions installed. Do I need them all?
+
+Browser extensions pose a constant security threat so we maintain multiple extensions with different levels of access. The original Readwise extension (white background) automatically syncs your Kindle highlights to Readwise. If you no longer use Kindle, you can delete this extension. Otherwise, you can keep it installed and unpinned as it does its work in the background. The Readwise export extension is used to authenticate Readwise with your Roam Research or Notion account. If you no longer use Roam or Notion, you can delete this extension. Finally, the Reader extension (yellow) is used to save documents to Reader and optionally enable highlighting of the open web.

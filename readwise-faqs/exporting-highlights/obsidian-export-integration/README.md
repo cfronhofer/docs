@@ -1,0 +1,5 @@
+# Obsidian Export Integration
+
+{% embed url="https://www.youtube.com/watch?v=DOYwwdDC9LQ" %}
+
+<table data-card-size="large" data-view="cards" data-full-width="false"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>Set Up the Export</strong></td><td></td><td><strong>Set Up the Export</strong></td><td><a href="how-does-the-readwise-to-obsidian-export-integration-work.md">how-does-the-readwise-to-obsidian-export-integration-work.md</a></td><td><a href="../../.gitbook/assets/CleanShot 2024-03-04 at 19.45.46@2x.png">CleanShot 2024-03-04 at 19.45.46@2x.png</a></td></tr><tr><td><strong>Customize the Export</strong></td><td></td><td></td><td><a href="how-can-i-customize-the-readwise-to-obsidian-export.md">how-can-i-customize-the-readwise-to-obsidian-export.md</a></td><td><a href="../../.gitbook/assets/CleanShot 2024-03-04 at 19.45.46@2x.png">CleanShot 2024-03-04 at 19.45.46@2x.png</a></td></tr></tbody></table>

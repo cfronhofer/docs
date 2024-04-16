@@ -1,0 +1,118 @@
+---
+title: '💬 Built-In Prompts'
+---
+## Word-Level Prompts
+
+These are prompts that can be run on _selected or highlighted text_. Generally, this means that the input is a single word or phrase.
+
+### Define
+
+This is the dictionary use case. Select any word or phrase, open the context menu and select `Invoke Ghostreader` or use the keyboard shortcut `G`, and select `Define` from the Prompt Menu.
+
+<img src="https://readwise-community.ghost.io/content/images/2022/11/readwise-reader-gpt-define.gif" alt="Using Ghostreader's Define function">
+
+The definition will be added as a highlight note, making it easy to save for later and—as an example—use in a vocabulary-building [Themed Review](../../readwise/themed-reviews.mdx) in Readwise.
+
+### Encyclopedia Lookup
+
+This is the encyclopedia use case. Select any word or phrase, open the context menu and select `Invoke Ghostreader` or use the keyboard shortcut `G`, and select `Encyclopedia Lookup` from the Prompt Menu.
+
+<img src="https://readwise-community.ghost.io/content/images/2022/11/readwise-reader-gpt-lookup.gif" alt="Using Ghostreader's Encyclopedia Lookup function">
+
+This prompt works best when dealing with the kind of person, place, or concept you'd be able to find in an _external_ encyclopedia such as Wikipedia. For internally defined terms, see `Term Lookup` below.
+
+### Translate
+
+This use case is self-explanatory. GPT-3.5 is pretty good at translating from one language to another, but your mileage will vary based on the particular language. GPT can even translate to dialects.&#x20;
+
+{% hint style="success" %}
+If you want a good laugh, try translating a passage to Jar Jar Binks.
+{% endhint %}
+
+![ghostreader-translate](/images/ghostreader-translate_jarjar.gif)
+
+### Term Lookup
+
+If you start studying the art and practice of reading, it won't be long before you come across the concept of _coming to terms_. What this means is that words can take on many meanings and it is your job as a reader to "come to terms" with the author's usage of language.
+
+> You will find that your comprehension of any book will be enormously increased if you only go to the trouble of finding its important words, identifying their shifting meanings, and coming to terms. Seldom does such a small change in a habit have such a large effect.\
+> \
+> (How to Read a Book, _Mortimer Adler_)
+
+Sometimes, the use-case here might be obvious. Perhaps you're reading _The Lord of the Rings_ and aren't quite sure what an "Ent" is, or you might be reading _Dune_ and you've forgotten what "_Lisan al Gaib_" means.
+
+Other times, you might think you want a dictionary definition or encyclopedia lookup, when really a term lookup would be much more helpful. For example, the term "monotonically" is used most generally to mean "in a way that is unchanging or repetitive in tone, pitch, or manner"—however, if you're reading a document about mathematical equations, you would probably prefer an explanation like, "In this document, monotonically is used to describe a mathematical function that either consistently increases or decreases without any fluctuations or reversals. It suggests a steady and predictable pattern or trend."
+
+This is where the Term Lookup prompt can really shine.
+
+## Paragraph-Level Prompts
+
+These are prompts that can be run on _highlights or selections longer than 4 words_. You can invoke these prompts when the highlight is selected by pressing `G` or by clicking/tapping `...` in the context menu bar.
+
+### Simplify
+
+This prompt attempts to take a dense or jargon-filled passage and simplify it into more easily comprehensible verbiage. Can have mixed results when used on passages that are already fairly simple, so only use this one if you're okay with GPT treating you like a kindergartner.
+
+![ghostreader-simplify](/images/ghostreader-simplify.gif)
+
+### Translate
+
+This works the same as the word-level "Translate" option described above.
+
+### TL;DR
+
+This prompt will attempt to condense a passage down to its most salient point.
+
+![ghostreader-tldr](/images/ghostreader-tldr.gif)
+
+### Haiku
+
+While not necessarily the most functionally useful prompt, this one lets you have a little bit of fun with what GPT can do. This prompt will take the selected passage, summarize it, then present the summary in haiku form, with some emojis for extra flavor.
+
+![ghostreader-haiku](/images/ghostreader-haiku.gif)
+
+### Flashcard
+
+This prompt will take the selected passage and use it to generate a question and answer pair that can be used to create a study-style flashcard.
+
+![ghostreader-flashcard](/images/ghostreader-flashcard.gif)
+
+## Document-Level Prompts
+
+These are prompts that can be run on the _full content of the document_. You can invoke these prompts at any time by pressing `Shift + G` or by clicking into the `...` menu in the top right.
+
+Document-level prompt responses (excluding "Tag the document") appear in the _document note_ field at the top of the **Notebook** panel.
+
+### Ask the document a question
+
+If you've ever used ChatGPT or one of the numerous "chat with a PDF" apps, this prompt will probably feel very familiar.
+
+You can use plain language to ask questions like "What is the author's opinion about X topic?" or "Does this book have any information about X?"
+
+### Summarize the document
+
+[Does exactly what it says on the tin](https://en.wikipedia.org/wiki/Does\_exactly\_what\_it\_says\_on\_the\_tin). This will produce a result similar to the default summarization prompt that runs on any manually saved document and appears in the **Info** panel.
+
+This prompt can be customized via the [Ghostreader preferences page](https://read.readwise.io/preferences/ghostreader).
+
+### Tag the document
+
+This is a (still somewhat experimental) prompt that tells Reader to examine the document content and apply a selection of tags that identify and epitomize the high-level concepts and topics.
+
+This prompt can be customized via the [Ghostreader preferences page](https://read.readwise.io/preferences/ghostreader).
+
+<Info>
+Looking for more information about customizing prompts using the Jinja templating language?<br />
+Check out the [Custom Prompts help doc](custom-prompts.mdx)!
+</Info>
+
+### Generate thought-provoking questions
+
+Remember the discussion questions from high school lit classes? Things like, "How do Elizabeth and Mr. Darcy both display prideful and prejudiced behavior throughout the novel?"
+
+This prompt lets you generate your own discussion questions for any document! And maybe they'll even be more nuanced than the ones you got in school.
+
+### Generate Q\&A pairs based on your highlights
+
+This prompt will look at the highlights you've already taken on a given document and generate some quiz-style Q\&A pairs that you can then use to create flash cards or other study material. (You could use them with the [Readwise Mastery feature](../../readwise/mastery.mdx)!)
+

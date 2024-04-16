@@ -1,91 +1,146 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Readwise Help Center",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon-reader.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#213971",
+    "light": "#89ABF2",
+    "dark": "#213971",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#1E2757",
+      "to": "#432055"
+    },
+    "background": {
+      "dark": "#070D1C",
+      "light": "#F2F2F2"
     }
   },
+  "versions": [
+    "Reader",
+    "Readwise 1.0"
+  ],
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:hello@readwise.io"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
+  "primaryTab": {
+    "name": "FAQs"
+  },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Feature Guides",
+      "url": "feature-guides"
+    },
+    {
+      "name": "More Docs",
+      "url": "more-docs"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Feature Guides",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "feature-guides/reader",
+      "version": "Reader"
     },
     {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "discord",
+      "url": "#"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://blog.readwise.io"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "FAQs",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+        "reader-faqs/reader-update-log",
+        {
+          "group": "Basics",
+          "pages": [
+            "reader-faqs/basics/how-do-i-get-started-with-reader",
+            "reader-faqs/basics/how-do-i-log-into-reader",
+            "reader-faqs/basics/does-reader-use-keyboard-shortcuts-or-hotkeys",
+            "reader-faqs/basics/does-reader-have-a-command-palette",
+            "reader-faqs/basics/does-reader-support-end-to-end-encryption",
+            "reader-faqs/basics/how-do-i-find-the-reader-web-app-in-my-browser",
+            "reader-faqs/basics/what-is-the-business-model-of-readwise-if-i-start-using-reader-how-do-i-know-you-wont-disappear-o",
+            "reader-faqs/basics/what-is-the-pricing-of-reader",
+            "reader-faqs/basics/whats-the-relationship-between-reader-and-readwise-are-they-automatically-connected",
+            "reader-faqs/basics/how-do-i-use-reader-offline"
+          ],
+          "icon": "child-reaching"
+        }
+      ],
+      "version": "Reader"
     },
     {
-      "group": "Essentials",
+      "group": "FAQs",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
+        "readwise-faqs/rw-update-log",
+        {
+          "group": "General",
+          "pages": [
+            "readwise-faqs/account-and-pricing/how-do-i-change-my-password"
+          ],
+          "icon": "circle-question"
+        }
+      ],
+      "version": "Readwise 1.0"
     },
     {
-      "group": "API Documentation",
+      "group": "Filtering",
       "pages": [
-        "api-reference/introduction"
-      ]
+        "feature-guides/reader/filtering/filtered-views",
+        "feature-guides/reader/filtering/filtering-syntax-guide",
+        "feature-guides/reader/filtering/query-examples"
+      ],
+      "version": "Reader"
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Ghostreader",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "feature-guides/reader/ghostreader/built-in-prompts",
+        "feature-guides/reader/ghostreader/custom-prompts"
+      ],
+      "version": "Reader"
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "feature-guides/readwise/mastery",
+        "feature-guides/readwise/themed-reviews"
+      ],
+      "version": "Readwise 1.0"
+    },
+    {
+      "group": "More Docs",
+      "pages": [
+        "more-docs/overview"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/readwiseio",
+    "github": "https://github.com/readwiseio",
+    "linkedin": "https://www.linkedin.com/company/readwise",
+    "website": "https://blog.readwise.io"
+  },
+  "feedback": {
+    "thumbsRating": true
   }
 }

@@ -1,0 +1,3 @@
+# How do I highlight the leading and trailing punctuation on iOS?
+
+Sometimes users have trouble selecting leading and/or trailing punctuation on iOS. Believe it or not, this is a frustration caused by iOS's built-in text selecting module which we're using for the Reader iOS app. To fix this, we'll need to build our own text selection, which is definitely on our roadmap. In the meantime, one workaround is to simply double-tap to highlight a paragraph (the mobile analog of tapping `H` on web to highlight a paragraph). This won't solve all frustration, but we've found it addresses 80% of instances!

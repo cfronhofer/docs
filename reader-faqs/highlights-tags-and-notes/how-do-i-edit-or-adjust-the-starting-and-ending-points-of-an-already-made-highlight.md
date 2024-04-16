@@ -1,0 +1,3 @@
+# How do I edit or adjust the starting and ending points of an already made highlight?
+
+When we initially designed highlighting for Reader, we intended to make it possible to tap an already made highlight to show "handles" that would enable you to adjust the starting and ending points of the highlight. But once we started building Reader, we discovered that this functionality would be incredibly difficult. It's possible, but we decided to punt this until later on our roadmap. If this is your desired flow, you can disable autohighlighting ("..." icon > **Toggle autohighlighting** on mobile) and first select the text with handles.

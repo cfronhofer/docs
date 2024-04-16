@@ -1,0 +1,75 @@
+---
+title: '⌨️ Filtering Syntax Guide'
+---
+<Warning>
+Just a heads up that this guide is only temporary until we make filtering easier within the user interface of Reader! As always, please don’t hesitate to reach out with any questions you might have 🙂
+</Warning>
+
+## Date Parameters 🗓️
+
+* `last_status`
+* `saved`
+* `last_opened`
+* `published`
+* You can use both absolute and relative dates eg `2022-03-20` or `"1 year ago"`
+
+***
+
+## String Parameters 💬
+
+* `tag`
+* `domain`
+* `url`
+* `category` or `type`
+  * `article`
+  * `book`
+  * `email`
+  * `pdf`
+  * `tweet`
+  * `rss`
+  * `video`
+* `rss_source`
+* `author`
+* `location` or `in`
+* `title`
+* `saved_using` (eg `instapaper` or `pocket`)
+
+***
+
+## Binary Parameters ⚖️
+
+* `feed`
+* `seen` (eg `seen:true`)
+* `unseen`
+* `shared` (will return true if the document has a public share link enabled)
+
+***
+
+## Numerical Parameters 🔢
+
+* `words`
+* `progress`
+* `highlights` or `has:highlights` or `has:tags` or `has:notes`
+* `minutes`
+* `progress`
+* `saved_count`
+
+***
+
+## Operators 🎛️
+
+You can add these double underscore operators to other parameters above to modify them.
+
+<Info>
+By default, using a `:` with no operator will fuzzy search.
+</Info>
+
+* `__gt` (greater than)
+* `__lt` (less than)
+* `__gte` (greater than or equal to)
+* `__lte` (less than or equal to)
+* `__contains`
+* `__exact`
+* `__before`
+* `__after`
+* `__not`

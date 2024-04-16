@@ -1,0 +1,3 @@
+# How do I share an annotated article with a friend, colleague, or family member?
+
+You can share a clean, distraction-free version of any document you highlighted and annotated in Reader (except for EPUBs or PDFs) by entering the more menu (`...`) and selecting `Enable public link` on web or `Share` > `Share with annotations` on mobile. This will create a publicly viewable link with your highlights and annotations overlaid. For more on this feature, including best practices, see [our Twitter thread](https://twitter.com/ReadwiseReader/status/1575286281562718210) announcing the share annotated documents feature.

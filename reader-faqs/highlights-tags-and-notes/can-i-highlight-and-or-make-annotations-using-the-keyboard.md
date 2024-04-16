@@ -1,0 +1,3 @@
+# Can I highlight and/or make annotations using the keyboard?
+
+Reader on web is designed with a "keyboard-based reading experience", enabling you to read, navigate, highlight, tag, and annotate without using your mouse. You can navigate the document using the up or down arrows, which moves the blue focus indicator paragraph-by-paragraph. If you want to highlight a paragraph, tap `H`. Once highlighted, you can tap `T` to tag the highlight or `N` to add a note. If you have a wide enough screen—or hide the sidebars using `[` and `]`—these annotations (notes and tags) will appear in the right margin.

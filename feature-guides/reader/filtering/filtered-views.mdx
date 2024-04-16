@@ -1,0 +1,43 @@
+---
+title: '🗃️ Filtered Views'
+---
+
+The core organizational concept in Reader is what we call a Filtered View. A Filtered View is similar to a query-based search in Gmail like `title:Getting Started` or `author:Paul Graham`. Basically, you can think of your Reader account as one flat database of documents and Filtered Views enable you to "filter" those documents based on a variety of different parameters. Every time you click an author name or tag or RSS source in the Reader user interface to see all documents by that author or with that tag or from that RSS source, you are just creating a Filtered View on that parameter.
+
+The best way to learn how to use Filtered Views is to watch our [Reader 202 walkthrough video on Filtered Views](https://readwise.io/reader202).
+
+You can reference all the different parameters that can be used with Filtered Views (including examples) from the [Filtering Syntax Guide](/feature-guides/reader/filtering/filtering-syntax-guide.mdx).
+
+## Custom Filtered Views
+
+Reader comes with a few default filtered views—like “Recently added” and “Quick reads”—but you can also make your own to better fit your personal needs or preferences.
+
+### Filter by tag or feed source
+
+On your [Manage feeds](https://read.readwise.io/feed/sources) and [Manage tags](https://read.readwise.io/tags) pages, you can use the Views column to assign tags and feeds to specific views.
+
+<img src="https://s3.amazonaws.com/readwiseio/2023/12/add-tags-to-view_web.gif" alt="Add tags to views"></img>
+
+### Filter by author
+
+In the Info tab of any document, you can click the name of the author to bring up a filtered view of all the documents by that author in your library. You can then name and save the view for easier future access.
+
+<img src="https://s3.amazonaws.com/readwiseio/2023/12/save-author-view_web.gif" alt="Save author as view"></img>
+
+### Filter by query
+
+You can create filtered views within Reader that will automatically group various sources together based on the query. To do so, click into `Manage filtered views`, then click the `Add filtered view` button in the top right.
+
+Filtered view queries can use a variety of different properties (you can view a full list in our [filtering syntax guide](/feature-guides/reader/filtering/filtering-syntax-guide.mdx)), including tags and source domains. For example, if you had a tag called "football" and a blog feed from `footballnews.com`, you could use the following query to group them together in a single saved view:
+
+```
+tag:football OR (feed:true AND domain:footballnews)
+```
+
+This would include any articles, videos, or other documents saved to your library which you've tagged "football," as well as any new documents that come into your feed from `footballnews.com`.
+
+## Filtered Views on Mobile
+
+Creating filtered views on mobile is currently a bit clunky compared to the web interface, but it's still possible. To do so, tap into the `Views` tab of the app and then tap the `+` icon in the top right corner. This will ask you to enter a query for the new view.
+
+Enter your query, then tap **Show**. From there you can tap **Save view** and give it a name, if you want to keep the search for future use.

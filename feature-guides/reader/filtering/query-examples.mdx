@@ -1,0 +1,68 @@
+---
+title: '🤔 Query Examples'
+---
+### Shortlist aka Up Next aka Important ⭐
+
+<Warning>
+**Note:** This will only work when your Library is on Triage configuration. If you switch to Shortlist configuration ([more here](https://www.youtube.com/watch?v=MX0XN\_O89r0)), you should use `in:shortlist`
+</Warning>
+
+* “Show me all documents tagged `shortlist` and not already archived”
+* `tag:shortlist AND (in:inbox OR in:later)`
+* Note: We’ve made this a default starter Saved Filter which can be accessed using the keyboard shortcut `s`
+
+### Shortreads 🤏
+
+* “Show me all documents shorter than 10 minutes and in Later”
+* `minutes__lt:10 AND in:later`
+
+### Top Feeds 🔥
+
+* “Show me all the new, unseen documents from my favorite RSS feeds”
+* You’ll obviously have to tweak this for yourself, but here’s mine:
+* `feed:true AND opened:false AND (domain:"poppingtins" OR domain:"constructionphysics" OR domain:"eugenewei" OR OR domain:"ribbonfarm" OR domain:"perell" OR domain:"sirupsen" OR domain:"florentcrivello" OR domain:"cdixon" OR domain:"fortelabs" OR domain:"kwokchain" OR domain:"zackkanter" OR domain:"andrewchen" OR domain:"notboring")`
+
+### Currently Reading 📖
+
+* “Show me all documents that I’ve started reading in the past week but haven’t archived”
+* `progress__gt:5 AND last_opened__after:"1 week ago" AND in__not:archive`
+
+### Delete all your automatically imported Pocket or Instapaper articles
+
+* `saved_using:pocket AND highlights:0`
+* Hit `shift + b` to open the Bulk Actions menu
+* Start typing `Delete`... to find `Delete all documents`
+
+### Untagged Documents View
+
+If you’re trying to clean up your account and want to find all of the documents that you haven’t tagged, you can use a custom filtered view with the following query:
+
+`has__not:tags`
+
+This will create a new filtered view showing any documents without a tag. If you'd like to keep the view handy for periodic housecleaning, you can click **Save view** and give it a fun, broom- or vacuum-related name.
+
+### Email Subscription View
+
+Email subscriptions don't currently appear in the Manage Feeds view, but you can create a custom filtered view to see only feed items added via email. To do this, you can use the following query:
+
+`feed:true AND type:email`
+
+Additionally, if you'd like to see only the newsletters from a specific source or author, you can click the author name in the **Info** tab of the right-hand sidebar to see a filtered view, which you can then save to your account.
+
+### Clean Out Old Feed Items
+
+If your Feed is getting cluttered up with old documents you never looked at, you can create a new filtered view showing any documents from your feed older than a week to easily clean out your backlog using the following query:
+
+`feed:true AND saved__lt:"1 week ago"`
+
+Once you've saved the view, you can use the caret dropdown menu to select **Split view** (or press **`\`** on your keyboard) and split by **Seen**.
+
+![split-view](/images/split-view.png)
+
+Once you've split the view, you'll see the same options you have on your general **Feeds** view: **Mark all as seen** in the bottom left of the **Unseen** tab, and **Delete all** in the bottom left of the **Seen** tab. By clicking **Mark all as seen** and then **Delete all**, you can quickly delete all of your old feed items at once.
+
+### Filter Out YouTube Shorts
+
+Subscribing to a YouTube channel [via RSS](https://rssfinder.app/) is great, until your feed starts getting clogged with YouTube Shorts. To lose the junk food and focus on the meatier videos, try this filter:
+
+`category:video AND minutes__gt:2`

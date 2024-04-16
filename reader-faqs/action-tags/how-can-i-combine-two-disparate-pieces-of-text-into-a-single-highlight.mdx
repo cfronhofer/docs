@@ -1,0 +1,5 @@
+# How can I combine two disparate pieces of text into a single highlight?
+
+Oftentimes, the most salient parts of a paragraph are the first and last sentence, which can be frustrating when the author includes a bunch of fluff in between them that just bog you down when reviewing the highlight later. To fix this, you can use the concatenation action tag. Simply add a note (`N`) with the text `.c1` to the first highlight, then `.c2` to the next highlight. When the highlights sync to Readwise, they’ll appear as a single highlight with an ellipse (`…`) between the two pieces of text.
+
+You can string as many highlights together in this way as you’d like by continuing on to `.c3`, `.c4`, etc. A tag of `.c1` will always begin a new concatenation string.
